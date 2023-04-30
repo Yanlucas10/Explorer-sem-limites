@@ -1,0 +1,260 @@
+/* font-family: 'Mulish', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #F9F4FB;
+}
+
+.astronauta img:nth-child(1) {
+    display: none;
+}
+
+.initial {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.text h1 {
+    font-family: 'Mulish', sans-serif;
+    font: 900;
+    font-size: 2.2rem;
+    font-style: normal;
+
+    color: #B52184;
+    text-align: center;
+    margin-top: 1.7rem;
+}
+
+h2 {
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+
+    color: #B52184;
+}
+
+.text p {
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #312D64;
+    
+
+    margin-top: .5rem;
+    margin-bottom: 3.5rem;
+}
+
+.box p {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    line-height: 1rem;
+    text-align: start;
+    color: #312D64;
+}
+
+#set {
+    margin-left: 40%;
+    cursor: pointer;
+}
+
+main {
+    background: #343193;
+
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    gap: 3.3rem;
+    padding: 6rem 9rem;
+}
+
+.box {
+    background: white;
+    display: grid;
+    justify-content: end;
+    text-align: start;
+
+    border-radius: 1.9rem;
+    padding: 2.6rem;
+    width: 17rem;
+    height: 17rem;
+}
+
+.box img {
+    width: 3rem;
+}
+
+fieldset {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: none;
+}
+
+.fieldeset-wrapper legend {
+    margin-top: 7.8rem;
+    margin-bottom: 3rem;
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: #B52184;
+    text-align: center;
+}
+
+.input-wrapper input::placeholder {
+    color: #312D64;
+    padding-left: 2.8rem;
+}
+
+.input-wrapper input {
+    max-width: 34rem;
+    height: 4rem;
+
+    border: 3px solid #312d64;
+    border-radius: 1.6rem;
+    padding: 12px 16px 12px 14px;
+    font-size: 1.6rem;
+    margin-top: 2rem;
+}
+
+textarea::placeholder {
+    color: #312D64;
+}
+
+textarea,
+#msg {
+    margin-top: 2rem;
+    max-width: 33rem;
+    height: 10rem;
+    border: 3px solid #312d64;
+
+    border-radius: 1.6rem;
+    resize: vertical;
+
+    font-size: 1.6rem;
+    padding: 20px;
+}
+
+#event-name {
+    background: url(/images/Vector\ \(4\).svg) no-repeat scroll 2rem 2rem;
+}
+
+#event-email {
+    background: url(/images/Vector\ \(5\).svg) no-repeat scroll 2rem 2.1rem;
+}
+
+button {
+    margin: auto;
+    padding: 1rem;
+    margin-top: 2.4rem;
+    border-radius: 1.4rem;
+    border: none;
+
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.4rem;
+
+    color: white;
+    background: #312D64;
+}
+
+footer {
+    margin-top: 5rem;
+    background: #312D64;
+}
+
+footer, p {
+    padding: .1rem;
+    color: white;
+    font-size: 1.9rem;
+font-family: 'Mulish';
+    font-weight: 600;
+    text-align: center;
+}
+
+@media(min-width:1440px) {
+    .initial {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+
+    .astronauta img:nth-child(2) {
+        display: none;
+    }
+
+    .astronauta img:nth-child(1) {
+        display: block;
+    }
+
+    .text h1 {
+        font-size: 4rem;
+    }
+
+    .text p {
+        text-align: left;
+        font-size: 2rem;
+    }
+
+    .text {
+        padding-top: 15rem;
+    }
+
+    #set {
+        margin: 5rem 0;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    main {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8rem;
+    }
+
+    main .box {
+        width: 20rem;
+        height: 20rem;
+        border-radius: 1rem;
+    }
+
+    main .box img {
+        width: 5rem;
+    }
+
+    .box p {
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+    }
+
+    .form {
+        display: flex;
+        margin-left: 10rem;
+        background: url(/images/image\ 11976.svg) no-repeat right;
+        background-size: contain;
+    }
+
+    legend {
+        display: flex;
+    }
+
+
+    .fieldeset-wrapper input,
+    textarea {
+        width: 50rem;
+    }
+
+    button {
+        margin-left: 0;
+    }
+}
